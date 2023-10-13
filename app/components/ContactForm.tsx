@@ -10,7 +10,7 @@ const ContactForm = () => {
       /> */}
       <div className="relative bg-opacity-75 bg-deep-purple-accent-700">
         <svg
-          className="absolute inset-x-0 bottom-0 text-blue-600"
+          className="absolute inset-x-0 bottom-0 text-sky-100"
           viewBox="0 0 1160 163"
         >
           <path
@@ -56,10 +56,10 @@ const ContactForm = () => {
                       htmlFor="firstName"
                       className="inline-block mb-1 font-medium"
                     >
-                      First name
+                      Name
                     </label>
                     <input
-                      placeholder="John"
+                      placeholder="John Doe"
                       required
                       type="text"
                       className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
@@ -67,7 +67,7 @@ const ContactForm = () => {
                       name="firstName"
                     />
                   </div>
-                  <div className="mb-1 sm:mb-2">
+                  {/* <div className="mb-1 sm:mb-2">
                     <label
                       htmlFor="lastName"
                       className="inline-block mb-1 font-medium"
@@ -82,7 +82,7 @@ const ContactForm = () => {
                       id="lastName"
                       name="lastName"
                     />
-                  </div>
+                  </div> */}
                   <div className="mb-1 sm:mb-2">
                     <label
                       htmlFor="email"
@@ -98,6 +98,20 @@ const ContactForm = () => {
                       id="email"
                       name="email"
                     />
+                  </div>
+                  <div className="mb-1 sm:mb-2">
+                  <label
+                      htmlFor="message"
+                      className="inline-block mb-1 font-medium"
+                    >
+                      Message
+                    </label>
+                    <textarea 
+                    id='message'
+                    name='message'
+                    required 
+                    placeholder="Type Here..." 
+                    className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"></textarea>
                   </div>
                   <div className="mt-4 mb-2 sm:mb-4">
                     <button

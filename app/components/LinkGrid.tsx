@@ -8,7 +8,7 @@ interface LinkGridProps{
 
 const LinkGrid:React.FC<LinkGridProps> = ({title, desc}) => {
   return (
-    <section className="bg-white text-black">
+    <section className="bg-white text-black py-40">
   <div
     className="mx-auto max-w-screen-xl px-4 py-8 sm:py-12 sm:px-6 lg:py-16 lg:px-8"
   >
